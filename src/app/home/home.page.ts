@@ -6,7 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['home.page.scss'],
 })
 export class HomePage {
-
-  constructor() {}
-
+  numberArray = Array.from({ length: 100 }, (_, index) => index + 1);
 }

@@ -1,20 +1,38 @@
-<ion-header [translucent]="true">
+<ion-header>
   <ion-toolbar>
-    <ion-title>
-      Blank
+    <ion-title size="large">
+      Header with safe-area
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
+  <ion-list>
+    <ion-select label="Example select for bottom direction" interface="popover" [value]="1">
+      <ion-select-option *ngFor="let number of numberArray" [value]="number">
+        Value {{ number }}
+      </ion-select-option>
+    </ion-select>
 
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
-  </div>
+    <ion-item label="Placeholder"></ion-item>
+    <ion-item label="Placeholder"></ion-item>
+    <ion-item label="Placeholder"></ion-item>
+    <ion-item label="Placeholder"></ion-item>
+    <ion-item label="Placeholder"></ion-item>
+    <ion-item label="Placeholder"></ion-item>
+    <ion-item label="Placeholder"></ion-item>
+    <ion-item label="Placeholder"></ion-item>
+
+    <ion-select label="Example select" interface="popover" [value]="1">
+      <ion-select-option *ngFor="let number of numberArray" [value]="number">
+        Value {{ number }}
+      </ion-select-option>
+    </ion-select>
+  </ion-list>
 </ion-content>
+
+<ion-footer>
+  <ion-toolbar>
+    Toolbar with safe-area
+  </ion-toolbar>
+</ion-footer>
